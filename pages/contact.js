@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Head from 'next/head'
 import Nav from '../components/Homepage';
 
-class myprojects extends Component {
+class contact extends Component {
     render() {
         return (
             <div>
@@ -11,12 +11,12 @@ class myprojects extends Component {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                <Nav activeItem="projects"/>
+                <Nav activeItem="contact"/>
                 
-                <div>Projem1</div>
+                <div>İletişim</div>
             </div>
         )
     }
 }
 
-export default myprojects
+export default contact;
