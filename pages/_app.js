@@ -1,6 +1,9 @@
-import '../styles/globals.css'
+//import '../styles/globals.css'
+import '../styles/style.css'
+import "bootstrap/dist/css/bootstrap.css";
 
 function MyApp({ Component, pageProps }) {
+
   return <Component {...pageProps} />
 }
 

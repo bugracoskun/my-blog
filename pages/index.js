@@ -1,12 +1,11 @@
 import React, { Component,useState,setState  } from 'react';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Container, Button,Grid } from "semantic-ui-react";
+import { Button,Grid } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 import Nav from '../components/Homepage';
 import Image from 'next/image';
-import About_me from './aboutMe';
 import Link from 'next/link';
+import Particles from 'react-particles-js';
 
 
 export default class home extends Component {
@@ -38,7 +37,150 @@ export default class home extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
+        <Head>
+          <title>İhsan Buğra Coşkun</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
+        <Nav activeItem="mainpage"/>
+
+        <section id="home" className="main-home parallax-section">
+            <div className="overlay"></div>
+            <div id="particles-js"><Particles 
+              params={{
+                particles: {
+            			"number": {
+                    "value": 80,
+                    "density": {
+                      "enable": true,
+                      "value_area": 800
+                    }
+                  },
+                  "color": {
+                    "value": "#888"
+                  },
+                  "shape": {
+                    "type": "circle",
+                    "stroke": {
+                      "width": 0,
+                      "color": "#000000"
+                    },
+                    "polygon": {
+                      "nb_sides": 5
+                    },
+                    "image": {
+                      "src": "img/github.svg",
+                      "width": 100,
+                      "height": 100
+                    }
+                  },
+                  "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                      "enable": false,
+                      "speed": 1,
+                      "opacity_min": 0.1,
+                      "sync": false
+                    }
+                  },
+                  "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": {
+                      "enable": false,
+                      "speed": 40,
+                      "size_min": 0.1,
+                      "sync": false
+                    }
+                  },
+                  "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#777",
+                    "opacity": 0.4,
+                    "width": 1
+                  },
+                  "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "attract": {
+                      "enable": false,
+                      "rotateX": 600,
+                      "rotateY": 1200
+                    }
+                  }
+            		},
+                "interactivity": {
+                  "detect_on": "canvas",
+                  "events": {
+                    "onhover": {
+                      "enable": true,
+                      "mode": "repulse"
+                    },
+                    "onclick": {
+                      "enable": true,
+                      "mode": "push"
+                    },
+                    "resize": true
+                  },
+                  "modes": {
+                    "grab": {
+                      "distance": 400,
+                      "line_linked": {
+                        "opacity": 1
+                      }
+                    },
+                    "bubble": {
+                      "distance": 400,
+                      "size": 40,
+                      "duration": 2,
+                      "opacity": 8,
+                      "speed": 3
+                    },
+                    "repulse": {
+                      "distance": 200
+                    },
+                    "push": {
+                      "particles_nb": 4
+                    },
+                    "remove": {
+                      "particles_nb": 2
+                    }
+                  }
+                },
+                "retina_detect": true,
+                "config_demo": {
+                  "hide_card": false,
+                  "background_color": "#b61924",
+                  "background_image": "",
+                  "background_position": "50% 50%",
+                  "background_repeat": "no-repeat",
+                  "background_size": "cover"
+                }
+              }} 
+            /></div>
+            <div className="container">
+                  <div className="row">
+
+                      <div className="col-md-12 col-sm-12">
+                            <h1>Kişisel Sayfama Hoşgeldiniz</h1>
+                            <h4>CBS Yazılımcısı İhsan Buğra Coşkun</h4>
+                            <a href="#blog" className="smoothScroll btn btn-default">Hakkımda</a>
+                      </div>
+
+                  </div>
+            </div>
+        </section>
+
+      </div>
+      /*
+      <div>
         <Head>
           <title>İhsan Buğra Coşkun</title>
           <link rel="icon" href="/favicon.ico" />
@@ -175,7 +317,7 @@ export default class home extends Component {
           }
         `}</style>
       </div>
-    
+          */
     )
   }
 }

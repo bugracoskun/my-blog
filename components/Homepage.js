@@ -1,19 +1,122 @@
-import React, { Component } from 'react';
+import React, { Component,useEffect  } from 'react';
+import Link from 'next/link';
 import { Menu, Icon, Image, Button, Dropdown,Segment } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
-import Link from 'next/link';
 
 class Homepage extends Component {
-    state = {activeItem: this.props.activeItem};
-    handleItemClick = (e, { name }) => {
-        this.setState({ activeItem: name });
-    };
+    //state = {activeItem: this.props.activeItem};
+    //handleItemClick = (e, { name }) => {
+    //    this.setState({ activeItem: name });
+    //};
 
+    constructor(props) {
+        super(props);
+        this.state = {
+          menu: false
+        };
+        this.toggleMenu = this.toggleMenu.bind(this);
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', this.updateDimensions);
+    }
+
+    updateDimensions = () => {
+        this.setState({ menu: false });
+    };
+    
+    toggleMenu(){
+      this.setState({ menu: !this.state.menu })
+    }
 
     render() {
+        const show = (this.state.menu) ? "show" : "" ;
         const { activeItem } = this.state
         
         return (
+            
+            <div className="navbar navbar-default navbar-static-top" role="navigation">
+                <div className="container">
+
+                    <div className="navbar-header">
+                        <button className="navbar-toggle" onClick={ this.toggleMenu }>
+                                <span className="icon icon-bar"></span>
+                                <span className="icon icon-bar"></span>
+                                <span className="icon icon-bar"></span>
+                        </button>
+                        <Link className="item" href="/">
+                            <a href="" className="navbar-brand">IBC</a>
+                        </Link>
+                        
+                    </div>
+                    
+                    {this.state.menu ? (
+                        <div className={"collapse navbar-collapse " + show}>
+                        <div className="nav navbar-nav navbar-right">
+                            <Link className="item" href="/">
+                                <li className="active"><a href="">Anasayfa</a></li>
+                            </Link>
+                            <Link className="item" href="/whoami">
+                                <li><a href="">Hakkımda</a></li>
+                            </Link>
+                            <Link className="item" href="/jobs">
+                                <li><a href="">İş Tecrübelerim</a></li>
+                            </Link>
+                            <Link className="item" href="/myprojects">
+                                <li><a href="">Projelerim</a></li>
+                            </Link>
+                            <Link className="item" href="/contact">
+                                <li><a href="">İletişim</a></li>
+                            </Link>
+
+                            <Link className="item" href="/contact">
+                                <li><a href=""><Icon name='github' size='large' style={{color: "#000000"}}></Icon>GitHub</a></li>
+                            </Link>
+                            <Link className="item" href="/contact">
+                                <li><a href=""><Icon name='linkedin alternate' size='large' style={{color: "#000000"}}></Icon>LinkedIn</a></li>
+                            </Link>
+                        </div>
+                    </div>
+                    ) : (null)}
+                    
+
+                    <div className="collapse navbar-collapse">
+                        <ul className="nav navbar-nav navbar-right">
+                                <Link className="item" href="/">
+                                    <li className="active"><a href="">Anasayfa</a></li>
+                                </Link>
+                                <Link className="item" href="/whoami">
+                                    <li><a href="">Hakkımda</a></li>
+                                </Link>
+                                <Link className="item" href="/jobs">
+                                    <li><a href="">İş Tecrübelerim</a></li>
+                                </Link>
+                                <Link className="item" href="/myprojects">
+                                    <li><a href="">Projelerim</a></li>
+                                </Link>
+                                <Link className="item" href="/contact">
+                                    <li><a href="">İletişim</a></li>
+                                </Link>
+
+                                <Link className="item" href="/contact">
+                                    <li><a href=""><Icon name='github' size='large' style={{color: "#000000"}}></Icon></a></li>
+                                </Link>
+
+                                <Link className="item" href="/contact">
+                                    <li><a href=""><Icon name='linkedin alternate' size='large' style={{color: "#000000"}}></Icon></a></li>
+                                </Link>
+                        </ul>
+                    </div>
+                    
+
+                </div>
+
+                <style jsx>{`
+
+                `}</style>
+            </div>
+            
+            /*
             <div>
                 <Segment inverted>
                     <Menu inverted secondary>
@@ -79,7 +182,7 @@ class Homepage extends Component {
                 
                 <style jsx>{``}</style>
             </div>
-            
+            */
 
             
         )
