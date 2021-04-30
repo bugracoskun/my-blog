@@ -98,13 +98,10 @@ class Homepage extends Component {
                                     <li><a href="">İletişim</a></li>
                                 </Link>
 
-                                <Link className="item" href="/contact">
-                                    <li><a href=""><Icon name='github' size='large' style={{color: "#000000"}}></Icon></a></li>
-                                </Link>
-
-                                <Link className="item" href="/contact">
-                                    <li><a href=""><Icon name='linkedin alternate' size='large' style={{color: "#000000"}}></Icon></a></li>
-                                </Link>
+                                <li><a target="_blank" href="https://github.com/bugracoskun"><Icon name='github' size='large' style={{color: "#000000"}}></Icon></a></li>
+                                
+                                <li><a target="_blank" href="https://www.linkedin.com/in/ihsan-bu%C4%9Fra-co%C5%9Fkun-959088138/"><Icon name='linkedin alternate' size='large' style={{color: "#000000"}}></Icon></a></li>
+                                
                         </ul>
                     </div>
                     

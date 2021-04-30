@@ -285,7 +285,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-about {
-  background: url('../public/gis2.jpg') no-repeat;
+  background: url('../public/istanbul.jpg') no-repeat;
 }
 
 .main-single-post {
@@ -297,7 +297,7 @@ a:hover, a:active, a:focus {
 }
 
 .main-contact {
-  background: url('../public/gis2.jpg') no-repeat;
+  background: url('../public/contact.jpg') no-repeat;
 }
 
 #particles-js {

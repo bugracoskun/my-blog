@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Container, Button } from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
 import Nav from '../components/Homepage';
 import Image from 'next/image';
 import About_me from './aboutMe';
 
 export default function Whoami() {
   return (
-      <div className="container">
+      <div>
         <Head>
           <title>İhsan Buğra Coşkun</title>
           <link rel="icon" href="/favicon.ico" />
@@ -17,6 +14,19 @@ export default function Whoami() {
         
         <Nav activeItem="aboutme"/>
 
+        <section id="home" className="main-about parallax-section">
+            <div className="overlay"></div>
+            <div className="container">
+                  <div className="row">
+
+                      <div className="col-md-12 col-sm-12">
+                            <h1>Ben Kimim?</h1>
+                      </div>
+
+                  </div>
+            </div>
+        </section>
+        
         <div className="whoami">
           
           <div style={{width: "calc(100% - 170px)", float: "left", textAlign:"left", marginLeft: "10px"}}>
@@ -44,83 +54,7 @@ export default function Whoami() {
               Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
               geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
             </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-            <div style={{marginLeft: "10px"}}>
-              Kendimi CBS yazılımcısı olarak ifade ediyorum. Bugüne kadar Python, Javascript, VueJS gibi dilleri kullanarak uydu görüntüsü işleme, algoritma
-              geliştirme, web tabanlı CBS projeleri ile kendimi geliştirme fırsatı buldum. Ayrıca openlayers, mapbox, turfjs gibi teknolojilerde çalıştım.
-            </div>
-          </div>
+        </div>
 
         
 

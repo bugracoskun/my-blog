@@ -14,18 +14,25 @@ class contact extends Component {
 
                 <Nav activeItem="contact"/>
 
+                <section id="home" className="main-contact parallax-section">
+                    <div className="overlay"></div>
+                    <div className="container">
+                        <div className="row">
+
+                            <div className="col-md-12 col-sm-12">
+                                    <h1>Benimle İletişim Kurun</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
                 <div className="mycontact">
                     <Email/>
                 </div>
                 
-                <style jsx>{`
-                    .mycontact{
-                        position: fixed;
-                        top: calc(50% - 200px);
-                        left: calc(50% - 250px);
-                        width: 100%;
-                    }
-                `}</style>
+                
+                <style jsx>{``}</style>
 
 
             </div>

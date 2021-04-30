@@ -170,8 +170,11 @@ export default class home extends Component {
 
                       <div className="col-md-12 col-sm-12">
                             <h1>Kişisel Sayfama Hoşgeldiniz</h1>
-                            <h4>CBS Yazılımcısı İhsan Buğra Coşkun</h4>
-                            <a href="#blog" className="smoothScroll btn btn-default">Hakkımda</a>
+                            <h4>CBS Yazılımcısı İhsan Buğra COŞKUN</h4>
+                            <Link className="item" href="/whoami">
+                              <a href="" className="smoothScroll btn btn-default">Hakkımda</a>
+                            </Link>
+                            
                       </div>
 
                   </div>
