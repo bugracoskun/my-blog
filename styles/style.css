@@ -113,6 +113,9 @@ a:hover, a:active, a:focus {
 .main-contact {
   height: 65vh;
 }
+.main-projects {
+  height: 65vh;
+}
 
 .overlay {
   background: rgba(0,0,0,0.7 );
@@ -280,24 +283,28 @@ a:hover, a:active, a:focus {
 }
 
 .main-home {
-  background: url('../public/gis2.jpg') no-repeat;
+  background: url('../public/mains/gis2.jpg') no-repeat;
   height: calc(100vh - 91px);
 }
 
+.main-projects {
+  background: url('../public/mains/projects.jpg') no-repeat;
+}
+
 .main-about {
-  background: url('../public/istanbul.jpg') no-repeat;
+  background: url('../public/mains/istanbul.jpg') no-repeat;
 }
 
 .main-single-post {
-  background: url('../public/gis2.jpg') no-repeat;
+  background: url('../public/mains/gis2.jpg') no-repeat;
 }
 
 .main-gallery {
-  background: url('../public/gis2.jpg') no-repeat;
+  background: url('../public/mains/gis2.jpg') no-repeat;
 }
 
 .main-contact {
-  background: url('../public/contact.jpg') no-repeat;
+  background: url('../public/mains/contact.jpg') no-repeat;
 }
 
 #particles-js {
@@ -738,6 +745,10 @@ footer .footer-copyright {
   .main-contact {
     height: 35vh;
   }
+  .main-projects {
+    height: 35vh;
+  }
+
 
 }
 
